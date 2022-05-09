@@ -1,6 +1,0 @@
-package com.example.smartkit
-
-import io.flutter.embedding.android.FlutterFragmentActivity
-
-class MainActivity: FlutterFragmentActivity() {
-}
