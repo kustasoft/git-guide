@@ -1,0 +1,693 @@
+<em>
+  <!DOCTYPE HTML>
+  <html>
+
+  <head>
+    <title>Documentation by "WRTeam "</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+
+  <body>
+
+    <section id="header">
+      <header> <span class="image avatar"><img src="images/ic_launcher.png" alt="" /></span>
+        <h4 id="logo"><a href="#">SmartKit</a></h4>
+      </header>
+      <nav id="nav">
+        <ul>
+          <li><a href="#one" class="active">Introduction</a></li>
+          <li><a href='#setup'>How to setup Flutter</a></li>
+          <li><a href='#dependency'>How to implement design?</a></li>
+          <li><a href='#image'>Change Image</a></li>
+          <li><a href='#splash'>Change Splash Screen</a></li>
+          <li><a href='#login'>Implement Login Animation</a></li>
+          <li><a href='#create_fcm'>Create Firebase Project for Application.</a></li>
+          <li><a href='#realtime'>Realtime Database.</a></li>
+          <li><a href='#emailLogin'>Firebase Authentication using Email/Password.</a></li>
+          <li><a href='#googleLogin'>Firebase Authentication using Google.</a></li>
+          <li><a href='#facebookLogin'>Firebase Authentication using Facebook.</a></li>
+          <li><a href='#deeplinking'>Firebase DeepLinking in Flutter</a></li>
+          <li><a href='#language'>Add Multi Language in app</a></li>
+          <li><a href='#googledrive'>Google Drive Integration</a></li>
+          <li><a href="#theme"> AddDynmic theme to app</a></li>
+          <!-- <li><a href='#api'>How to Change Api Parameter</a></li>
+          <li><a href='#music_player'>How to Implement Music Player</a></li> -->
+          <li><a href='#WRButton'>How to use WRButton?</a></li>
+          <li><a href='#apk'>How to Generate Release APK</a></li>
+          <!-- <li><a href='#appname'>How to change the app name?</a></li> -->
+          <!-- <li><a href='#chnge_acheive'>How to change condition for achievement?</a></li> -->
+          <li><a href='#support'>Need Support?</a></li>
+          <li><a href='#rating'>Your Feedback</a></li>
+          <li><a href='#contactus'>Contact Us</a></li>
+
+        </ul>
+      </nav>
+
+    </section>
+
+    <div id="wrapper">
+      <div id="main">
+        <section id="one">
+          <div class="container">
+
+            <!-- <p>“ Flutter Design ” </p> -->
+            <header class="major">
+              <h2>SmartKit</h2>
+            </header>
+           
+            <!-- // Setup flutter // -->
+            <section id="setup">
+              <div class="container"> <br>
+                <h2>How to Setup Flutter in Android Studio</h2>
+
+                <ol>
+
+                  <li>Download Lastest Flutter SDK from below link.in that click on flutter_window_xxx.zip button.</li>
+
+                  <li><a href="https://flutter.dev/docs/get-started/install/windows">Flutter sdk Here</a></li>
+                  <br>
+                  <img src="images/setup.png" alt="SmartKit" />
+                  <br><br>
+                  <li>Extract the zip file and copy flutter folder into your desired installation location for the
+                    Flutter SDK (eg. C:\src\flutter; do not install Flutter in a directory like C:\Program Files\).</li>
+                  <br>
+                  <li>Inside Flutter folder find flutter_console.bat. Start it by double-clicking.<\li><br><br>
+                      <img src="images/setup2.png" alt="SmartKit" />
+                      <br>
+                  <li>Now set your enviournment variable</li>
+                  <li>From the Start search bar in , type ‘env’ and select Edit environment variables for your account
+                  </li>
+
+
+                  <br>
+                  <img src="images/path.png" alt="SmartKit" />
+                  <br><br>
+
+                  <li>Under User variables check if there is an entry called Path:</li>
+                  <li>Click on Edit.new Dialog open from it click on new and copy full path to flutter\bin as its value
+                  </li>
+                  <li>Now Restart your pc for changes to take effect</li>
+                  <img src="images/path2.png" alt="SmartKit" /><br><br>
+                  <li>Now check everything is ok or not</li>
+                  <li>open cmd and do following shown in below picture</li><br>
+                  <img src="images/check.png" alt="SmartKit" /><br><br>
+                  <li>Now open Android Studio and create new flutter project then select your flutter sdk file to the
+                    location where we have downloaded earlier and that's it</li>
+                  <br><img src="images/flutter.png" alt="SmartKit" /><br><br>
+
+
+                </ol>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+
+
+            <!-- // dependency // -->
+            <section id="dependency">
+              <div class="container"> <br>
+                <h2>How to Implement Design in your project </h2>
+
+                <ol>
+
+                  <li>Suppose you want to implement webview,then go to the webview folder inside that copy file
+                    webviewRoute into your project.then add if it has any dependency then add dependency in your
+                    pubspec.yaml file according to it.</li>
+                  <br>
+                  <img src="images/dependency.png" alt="SmartKit" />
+                  <br><br>
+                  <img src="images/dependency2.png" alt="SmartKit" />
+
+                </ol>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+
+            <!-- // image // -->
+            <section id="image">
+              <div class="container"> <br>
+                <h2>How to Add Your Own Images </h2>
+
+                <ol>
+                  <li>Go to assets > images ></li><br>
+                  <li>Add your images inside this folder</li><br>
+                  <img src="images/image.png" alt="SmartKit" />
+                  <br><br>
+
+                  <li>Add Image to pubspec file inside that there is assets tag put your image here</li><br>
+                  <img src="images/image2.png" alt="SmartKit" />
+                  <br><br>
+
+                </ol>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+
+            <!-- // splash // -->
+            <section id="splash">
+              <div class="container">
+                <h2>Change Splash Screen</h2>
+                <ol>
+                  <li>Open Android Studio >Go to android > app > src > main > res > launch_background.xml</li>
+                  <li>Here You can change background and logo etc.this is defalut splash screen.if you want full
+                    customize then you have to create according to your need your dart file and then redirect main.dart
+                    to that splash screen as done in this project.<br />
+
+                </ol>
+                <img src="images/splash.png" alt="SmartKit" />
+                <p> </p>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+
+            <!-- // login // -->
+            <section id="login">
+              <div class="container">
+                <h2>Implement Login Animation</h2>
+                <ol>
+                  <li>Copy login_Animation.dart file to your project path.</li>
+                  <br>
+                  <img src="images/login.png" alt="SmartKit" /><br><br>
+
+
+                  <li>Now open pubspec.yaml file and add dependency for flare flutter.and in assets folder add teddy.flr
+                    file and pubspec.yaml file add tag '- assets / ' inside assets tag.</li><br>
+
+                  <img src="images/login2.png" alt="SmartKit" /><br>
+                </ol>
+
+                <p> </p>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+
+            <!-- // api // -->
+          <!--   <section id="api">
+              <div class="container">
+                <h2>Change Api Parameter</h2>
+                <ol>
+                  <li>In Leaderboard, we have get player list from json.if you want to change your server url and if you
+                    have changed api parameter then you need to change in code for that open leaderboard.dart file.in
+                    that there is method getLeader() ,in data variable you have to change you parameter in key value
+                    formate and for api url you have to change base_url value.</li>
+                  <br>
+                  <img src="images/api.png" alt="SmartKit" /><br><br>
+
+
+
+                </ol>
+
+                <p> </p>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+
+            <!-- // music_player // -->
+           <!--  <section id="music_player">
+              <div class="container">
+                <h2>How to implement Music Player</h2>
+                <ol>
+                  <li>For music player,go to music player directory and from them choose which player you want to
+                    implement and copy these 3 files in your project,as shown in fig.</li>
+                  <br>
+                  <img src="images/music1.png" alt="SmartKit" /><br><br>
+
+                  <li>For Offline player you need to add following code to in your mainactivity file</li>
+                  <br>
+                  <img src="images/music2.png" alt="SmartKit" /><br><br>
+                </ol>
+
+                <p> </p>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section> -->
+            <!-- // WRButton // -->
+			
+			
+			<section id="create_fcm">
+  <div class="container">
+    <h2>Create Firebase Project for Application.</h2>
+ 
+	    <li>We need Firebase project for <b>Firebase Phone Login (Firebase OTP), Google Sign-In and Facebook Login.</b> </li>
+		 <li>here is steps for craete project.</li><br>
+    <a href="#create_fcm"><img src="images/create1.png"></a><br><br>
+	<a href="#create_fcm"><img src="images/create2.png"></a><br><br>
+	<a href="#create_fcm"><img src="images/create3.png"></a><br><br>
+	<a href="#create_fcm"><img src="images/create4.png"></a><br><br>
+	<a href="#create_fcm"><img src="images/create5.png"></a><br><br>
+	<a href="#create_fcm"><img src="images/create6.png"></a><br><br>
+	<a href="#create_fcm"><img src="images/create7.png"></a><br><br>
+	<a href="#create_fcm"><img src="images/ios.png"></a><br><br>
+	<a href="#create_fcm"><img src="images/ios2.png"></a><br><br>
+    <br>
+    </p>
+    <div class="section_bdr"></div>
+	  </ul>
+  </div>
+</section>
+
+			<section id="realtime">
+  <div class="container">
+    <h2>Enable Realtime database in firebase console.</h2>
+	<li>Realtime database we use for battle feture.</li>
+    <a href="#realtime"><img src="images/db0.png"></a><br><br>
+    <a href="#realtime"><img src="images/db.png"></a><br><br>
+	<li><a style="color:#8B0000">Realtime database rules must be true like below.because if user dont have read and right permission then they cannot play battle game.</a></li><br>
+    <a href="#realtime"><img src="images/db1.png"></a><br><br> 
+	<br>
+    </p>
+    <div class="section_bdr"></div>
+	  </ul>
+  </div>
+</section>
+<section id="emailLogin">
+  <div class="container">
+    <h2>Authenticate Using Email and Password on Flutter With Firebase.</h2>
+    
+	 <li>First of all we have to enable <b>Google Sign-In</b> method in firebase console.</li>
+		<li>Now open your project in firebase console.</li>
+		<li>In the Firebase console, open the Auth section.</li>
+		<li>On the Sign in method tab, enable the Email/password sign-in method and click Save.</li>
+  
+    <a href="#emailLogin"><img src="images/email_login1.png"></a><br><br>
+    <a href="#emailLogin"><img src="images/email_login2.png"></a><br><br>
+<h4>Change Sendder Name and Subject for verify email and reset Password.</h4>
+    <a href="#emailLogin"><img src="images/sub_1.png"></a><br><br>
+    <a href="#emailLogin"><img src="images/sub_2.png"></a><br><br>
+    <br>
+    </p>
+    <div class="section_bdr"></div>
+	  </ul>
+  </div>
+</section>
+
+
+<section id="googleLogin">
+  <div class="container">
+    <h2>Authenticate Using Google Sign-In on Flutter With Firebase.</h2>
+	
+    <li>First of all we have to enable <b>Google Sign-In</b> method in firebase console.</li>
+		<li>Now open your project in firebase console.</li>
+	<a href="#googleLogin"><img src="images/google_1.png"></a><br><br>
+	<a href="#googleLogin"><img src="images/google_2.png"></a><br><br>                              
+  <h2>Authenticate Using Mobile Sign-In on Flutter With Firebase.</h2>
+  <li>First of all we have to enable <b>Phone Sign-In</b> method in firebase console.</li>
+		<li>Now open your project in firebase console.</li>
+		<a href="#googleLogin"><img src="images/mobile_login.png"></a><br><br>
+	<a href="#googleLogin"><img src="images/mobile_login1.png"></a><br><br>    
+		
+		<li>We have to add <b>Authorized domain</b> and <b> Application Privacy Policy link</b> in Google Cloud Plateform.</li>
+		<li>This step is important without add authorized domain link google sign in may not work. </li>
+		<li>Open your project in Google Cloud Plateform, here is link for <a href="https://console.cloud.google.com/apis/credentials/consent" target="_blank">OAuth consent screen</a> </li>
+		<a href="#googleLogin"><img src="images/google_4.png"></a><br><br>
+	    <li>Add the dependencies for Firebase Authentication and Google Sign-In to your app-level build.gradle file:</li>
+		    <a href="#googleLogin"><img src="images/google_3.png"></a><br><br>
+			<li>If you haven't yet specified your app's SHA-1 fingerprint, do so from the Settings page of the Firebase console.</li>
+			 <a href="#googleLogin"><img src="images/sha_1.png"></a><br><br> 
+			 <a href="#gooleLogin"><img src="images/google_5.png"></a><br><br>
+	   	  <li>After you integrate Google Sign-In, your LoginActivity has code for login you don't have to add anything extra.</li>
+		  <li>If you want to read code for google sign-in for flutter you can read here. </li>
+		  <li> <a href="https://developers.google.com/identity/sign-in/android/sign-in" target="_blank">Steps for Integrating Google Sign-In into Your Flutter App</a>
+	 <br> <b>Note</b>
+	 <li>There was <b>three</b> type of SHA-1.</li>
+	 <ul>
+	 <li><b>Debug SHA-1 : </b> you can get this sha from your android stuido.</li>
+	 <li><b>Release SHA-1 :</b> when you create keystore(.jks) file for generate sign apk. you can get release sha from your key store file.
+	 Use this Desktop App for get release sha from keystore file. <a href="https://keystore-explorer.org/" target="_blank">KeyStore Explorer.</a>
+	 Add this sha in your firebase project when you test realese apk.</li>
+	 <li><b>Sign SHA-1:</b>You have add this sha when you publish your app on playstore. You can get this sign sha from your PlayConsole. Without Sign sha your google login not work when your app published on PlayStore.</li>
+	 <li>For App signing certificate  go to > Play Console > Select your App > Release Management > App Signing </li>
+	 <br><a href="#gooleLogin"><img src="images/singing.png"></a><br><br>
+	</ul>
+	
+    <div class="section_bdr"></div>
+  </div>
+</section>
+<section id="facebookLogin">
+  <div class="container">
+
+    <h2>Authenticate Using Facebook Login on Flutter with Firebase.</h2>
+	 <ul>
+  <li>first create project for your application , go to  <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a></li>
+ <li> Go to Facebook Quick Start Integrate the Facebook SDK</li>
+	    <li>On the <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a> site, get the <b>App ID</b> and an <b>App Secret</b> for your app. </li>
+		<li> In the <a href="https://console.firebase.google.com/u/0/" target="_blank">Firebase console</a>, open the <b>Auth</b> section. Enable Facebook Login.</li>
+		 <li>On the <b>Sign in method</b> tab, enable the <b>Facebook</b> sign-in method and specify the <b>App ID</b> and <b>App Secret</b> you got from Facebook.</li>
+			    <a href="#facebookLogin"><img src="images/fb0.png"></a><br><br>
+	
+		 <li>Then, make sure your <b>OAuth redirect URI</b> (e.g. my-app-12345.firebaseapp.com/__/auth/handler) is listed as one of your <b>OAuth redirect URIs</b> in your Facebook app's settings page on the <a href="https://developers.facebook.com/" target="_blank">Facebook for Developers</a> site in the <b>Product Setting > Facebook Login</b> config </li>
+	
+		 <li>Add the dependencies for Firebase Authentication and Facebook Login SDK to your app-level build.gradle file:</li>
+		  <a href="#facebookLogin"><img src="images/fb1.png"></a><br><br>
+		 <b>Edit Your Resources and Manifest</b>
+		 <li>Create strings for your Facebook app ID and for those needed to enable Chrome Custom Tabs. Also, add FacebookActivity to your Android manifest.</li>
+		 <li>Open your app >res >values >strings.xml file.</li>
+  
+    <a href="#facebookLogin"><img src="images/fb3.png"></a><br><br>
+	
+	<li>Open the app >manifest >AndroidManifest.xml file.</li>
+	<li>Add the following meta-data element, an activity for Facebook</li>
+	
+    <a href="#facebookLogin"><img src="images/fb2.png"></a><br><br>
+	<li>Associate Your Package Name and Default Class with Your App</li>
+
+	<li>Provide the Development and Release Key Hashes for Your App</li>
+	<li>To ensure the authenticity of the interactions between your app and Facebook, you need to supply us with the Flutter key hash for your development environment. If your app has already been published, you should add your release key hash too.</li>
+		    <a href="#facebookLogin"><img src="images/fb5.png"></a><br><br>
+	<b>Generating a Development Key Hash</b>
+	<ol>
+	<li> We will use SHA-1 key to generate hashkey for facebook login.</li>
+		<li>you can generate hash online. Here is external link for generate key has for facebook login.<a href="http://tomeko.net/online_tools/hex_to_base64.php" target="_blank">Key hash Genrate Link</a></li>
+	 <br><a href="#gooleLogin"><img src="images/hash_key1.png"></a><br><br> 
+	 <br><a href="#gooleLogin"><img src="images/hash_key2.png"></a><br><br>
+	<br>
+
+	</ol>
+	
+ </ul>
+    <div class="section_bdr"></div>
+  </div>
+</section>
+
+<section id="deeplinking">
+  <div class="container">
+
+    <h2>Firebase Dynamic Links Setting URL From Firebase Console </h2>
+	 <ul>
+  <li>Open Firebase console. Open Firebase Project in which you need to add Firebase Dynamic Links.</li>
+ <li> Configure App (Android, iOS) in your Firebase project.</li>
+	    <li>Dynamic link Section will open up the Dynamic Links section</li>
+		<a href="#deeplinking"><img src="images/deeplinking_1.png"></a><br><br>
+		<li> Section will open up the Dynamic Links section</li>
+		 <li>Now Click on Get Started button for creation of URL prefix</li>
+		 <li>Create a Dynamic Link Containing Unique Domain Name of your App. For example: firebasedynamiclinks.page.link. Here, the domain name is suffixed with page.link.
+Then, follow: Configure → Verify → Finish steps.</li>
+<li>Then, follow Steps Click Configure → Verify → Finish steps.</li>
+			    <a href="#deeplinking"><img src="images/deeplinking_2.png"></a><br><br>
+	
+		 <li><b>Create a dynamic link in the console</b></li>
+	
+		 <li>Click on the New dynamic links button you will be redirected to some step defined for dynamic links creation</li>
+		 <a href="#deeplinking"><img src="images/deeplinking_12.png"></a><br><br>
+		  <a href="#deeplinking"><img src="images/deeplinking_3.png"></a><br><br>
+		  <li>Add DeepLink URl and DeepLink NAme then press next button.</li>
+		  <a href="#deeplinking"><img src="images/deeplinking_4.png"></a><br><br>
+		  <a href="#deeplinking"><img src="images/deeplinking_5.png"></a><br><br>
+		  <a href="#deeplinking"><img src="images/deeplinking_7.png"></a><br><br>
+		  <a href="#deeplinking"><img src="images/deeplinking_8.png"></a><br><br>
+		  <a href="#deeplinking"><img src="images/deeplinking_9.png"></a><br><br>
+		  <a href="#deeplinking"><img src="images/deeplinking_10.png"></a><br><br>
+		  <li>Create a Dynamic Link In Programming</li>
+		  <a href="#deeplinking"><img src="images/deeplinking_11.png"></a><br><br>
+	
+ </ul>
+    <div class="section_bdr"></div>
+  </div>
+</section>
+
+<section id="googledrive">
+  <div class="container">
+
+    <h2>Google Drive Integration In Flutter (Upload, Download And List Files)</h2>
+	 <ul>
+  <li>Create Google Firebase Project.</li>
+ <li>Enable Google Drive API from Google Developer Console.<br>(<b>Note: you need to select the same project in Google Developer Console as you have created in Google Firebase.</b>)</li>
+	   
+		<a href="#googledrive"><img src="images/googledrive.png"></a><br><br>
+		
+ </ul>
+    <div class="section_bdr"></div>
+  </div>
+</section>
+
+<!-- //////////////language//////////////////////////language/////////////////////// -->
+<section id="language">
+  <div class="container">
+    <h2>How to Add Multi Language in app</h2>
+    <ol>
+      <li>Add language First go to <b>smartkit/lib/l10n</b> folder and duplicate app_en.arb file and rename with your language. and replace string with your langauge</li>
+      <br>
+      <li>Then Open l10n.dart file.</li>
+      <br>
+       <li>Paste <b>const Locale('your language code'),</b> this below const Locale('de')</li>
+       <br>
+       <img src="images/languagestep1.png" alt="SmartKit" /><br><br>
+       <li>Then copy code show below image.</li>
+       <br>
+       <img src="images/languagestep2.png" alt="SmartKit" /><br><br>
+       <li>And paste above defalut line. As shown below image </li>
+       <br>
+       <img src="images/languagestep3.png" alt="SmartKit" /><br><br>
+       <li>Then Goto your <b> main.dart</b> and wrap your <b>MaterialApp</b> with <b>ChangeNotifierProvider</b> as shown below image </li>
+       <br>
+       <img src="images/languagestep4.png" alt="SmartKit" /><br><br>
+       <li>Then add this line shown below image in your <b>MaterialApp</b> widget</li>
+       <br>
+       <img src="images/languagestep5.png" alt="SmartKit" /><br><br>
+    </ol>
+
+    <p> </p>
+    <div class="section_bdr"></div>
+    </ul>
+  </div>
+</section>
+
+<!-- //////////////////theme/////////////////////theme//////////////////// -->
+
+<section id="theme">
+  <div class="container">
+    <h2>Add Dynamic theme to app</h2>
+    <ol>
+      <li>Copy<b>theme.dart</b> file and paste in your project</li>
+      <br>
+      <li>Then open <b>theme.dart</b> and add your <b>themedata</b> as par your requerment. as shown below image.</li>
+      <br>
+      <img src="images/theme1.png" alt="SmartKit" /><br><br>
+      <li>Then goto your <b>main.dart</b> and wrap your <b>MaterialApp</b> widget with change <b>ChangeNotifierProvider</b> as shown below image.</li>
+      <br>
+      <img src="images/theme2.png" alt="SmartKit" /><br><br>
+      <li> Then add below code in yuor app where you want to add dynamic theme switch</li>
+      <br>
+      <img src="images/theme3.png" alt="SmartKit" /><br><br>
+    </ol>
+
+    <p> </p>
+    <div class="section_bdr"></div>
+    </ul>
+  </div>
+</section>
+
+
+            <section id="WRButton">
+              <div class="container">
+                <h2>How to use WRButton</h2>
+                <ol>
+                  <li>For Use Wrbutton copy <b>WRButton.dart</b> from <b>"flutter_ui_components\lib\New
+                      Componets\Buttons\"</b>
+                    and
+                    add to your project.
+                    Using WRButton this your access all property of this Button. as see in fig.</li>
+                  <br>
+                  <img src="images/WrbtnSqure.png" alt="SmartKit" /><br><br>
+
+                  <li>For Use Wrbutton shape squre to add <code>shape: WRShape.squre</code>
+
+                  <li>For Use Wrbutton shape rounded to add <code>shape: WRShape.rounded</code>
+                  <li>Defalut Wrbutton shape is 5.0 Circular Radius</b>
+                    <br>
+                    <img src="images/Wrbtnwithborder.png" alt="SmartKit" /><br><br>
+                  <li>For Use Wrbutton borderbutton you need to add this <code>border: true</code> defalut is
+                    <b>false</b>
+                  <li>Border Radius depends on Wrbutton shape property</b>
+                    <br>
+                    <img src="images/wrbtnDisable.png" alt="SmartKit" /><br><br>
+                  <li>For use Disable button you need to add this <code>disable: true</code> property </li>
+                  <!-- <li>For Offline player you need to add following code to in your mainactivity file</li>
+                  <br>
+                  <img src="images/music2.png" alt="SmartKit" /><br><br> -->
+                </ol>
+
+                <p> </p>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+            <!-- // WRButton1 // -->
+            <section id="WRButton1">
+              <div class="container">
+                <h2>How to use WRButton</h2>
+                <ol>
+                  <li>For Use Wrbutton copy <b>WRButton.dart</b> from <b>"smartkit/lib/Widget/Button/CustomeButton"</b>
+                    and
+                    add to your project.
+                    Using WRButton this your access all property of this Button. as see in fig.</li>
+                  <br>
+                  <img src="images/WrbtnSqure.png" alt="SmartKit" /><br><br>
+
+                  <li>For Use Wrbutton shape squre to add <code>shape: WRShape.squre</code>
+
+                  <li>For Use Wrbutton shape rounded to add <code>shape: WRShape.rounded</code>
+                  <li>Defalut Wrbutton shape is 5.0 Circular Radius</b>
+                    <br>
+                    <img src="images/Wrbtnwithborder.png" alt="SmartKit" /><br><br>
+                  <li>For Use Wrbutton borderbutton you need to add this <code>border: true</code> defalut is
+                    <b>false</b>
+                  <li>Border Radius depends on Wrbutton shape property</b>
+                    <br>
+                    <img src="images/wrbtnDisable.png" alt="SmartKit" /><br><br>
+                  <li>For use Disable button you need to add this <code>disable: true</code> property </li>
+                  <!-- <li>For Offline player you need to add following code to in your mainactivity file</li>
+                              <br>
+                              <img src="images/music2.png" alt="SmartKit" /><br><br> -->
+                </ol>
+
+                <p> </p>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+
+
+
+            <!-- // apk // -->
+            <section id="apk">
+              <div class="container">
+                <h2>Generate Release APK</h2>
+                <ol>
+                  <li>In you android studio, right click on you android module of you flutter project.there is option
+                    flutter, click on that inside open in new module.then generate release apk from that new module.
+                  </li>
+
+                  <br>
+                  <img src="images/apk1.png" alt="SmartKit" /><br><br>
+
+
+                  <li>and if in your android studio if flutter option is disable then go to file option in your android
+                    studio inside open then locate your flutter project's android module and open it.now generate relase
+                    apk from that new module.</li>
+                  <br>
+                  <img src="images/apk2.png" alt="SmartKit" /><br><br>
+                  <img src="images/apk3.png" alt="SmartKit" /><br><br>
+                  <li>In Build menu there is option generate signed bundle/apk.</li>
+
+                  <br>
+                  <img src="images/apk4.png" alt="SmartKit" /><br><br>
+
+
+                </ol>
+
+                <p> </p>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+            <section id="support">
+              <div class="container"> <br>
+                <h2>Need Support?</h2>
+                <p>Its our pleasure to serve our service and support. please contact our support team.</p>
+                <p>Head of Customer Support : Bharavi Patel,<br> Skype: <a
+                    href="https://join.skype.com/invite/vM85JTUEkGlE" target="_blank" style='color:#3c55d1'> Bharavi Patel</a></p>
+
+                <p>To help our customers, we constantly be in touch with every customer if they need any assistance
+                  regarding our product.
+                  We offer our customers a support from <strong> Mon – Fri 9.00am to 6.00pm IST (GMT +5.30) – We are a
+                    Team located in India – Asia.</strong></p>
+
+                <p>Typically we reply our customers for all the questions and queries within 24 hours of time via
+                  comments, support forum or emails.</p>
+
+
+                </ul>
+
+              </div>
+              <div class="section_bdr"></div>
+            </section>
+            <section id="rating">
+              <div class="container"> <br>
+                <h2>Your Feedback </h2>
+                <p>Dear valuable customer,
+                  Thank you very much for choosing our product.
+                  It's our pleasure to serve top-notch service to you.
+                  Please give us your honest feedback that will help us to make a more strong and reliable product by
+                  click here <a href="https://codecanyon.net/downloads" style='color:#3c55d1' target="_blank">Rate
+                    Us</a>.
+                  Thank you very much.</p>
+
+
+                </ul>
+              </div>
+              <div class="section_bdr"></div>
+            </section>
+            <section id="contactus">
+              <div class="container"> <br>
+                <h2>Contact Us</h2>
+                <p>WRTeam has creative and dedicated group of developers who are mastered in Apps Developments and Web
+                  Application Development with a niche in delivering quality solutions to customers across the globe.
+                  Contact us today to find out how we can help you or for freelance work.
+                <p>Visit Us : <a href="https://wrteam.in/" target="_blank"><span
+                      style="color:#0e8bcb;">https://wrteam.in</span>
+                  </a>
+                <p>Mail Us : info@wrteam.in</p>
+                <p>Call Us : +91 9033 646589</p>
+                <p>Skype : <a
+                    href="https://join.skype.com/invite/vM85JTUEkGlE" target="_blank" style='color:#3c55d1'> Bharavi Patel</a></p>
+					  
+                <p>Mail Us : info@wrteam.in</p>
+                </p>
+                <p>Thank you very much.</p>
+                <div class="section_bdr"></div>
+                </ul>
+              </div>
+            </section>
+
+
+          </div>
+
+          <!-- Footer -->
+          <section id="footer">
+            <div class="container">
+              <ul class="copyright">
+                <li>
+                  <h3><span style="color:#FB2A59;font-style:italic">WRTeam</span>
+                </li>
+                <!--<li><a href="http://www.viaviweb.in" target="_blank"><span style="color:#9f9f9f;font-style:italic">Viavi Webtech</span></a></li>-->
+              </ul>
+            </div>
+          </section>
+      </div>
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrollzer.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function () {
+          $(window).scroll(function () {
+            if ($(this).scrollTop() > 100) {
+              $('.scrollup').fadeIn();
+            } else {
+              $('.scrollup').fadeOut();
+            }
+          });
+          $('.scrollup').click(function () {
+            $("html, body").animate({ scrollTop: 0 }, 600);
+            return false;
+          });
+        });
+      </script>
+      <div><a href="#" class="scrollup">Scroll</a></div>
+  </body>
+
+  </html>
+</em>
